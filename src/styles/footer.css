@@ -1,0 +1,124 @@
+/* =========================
+   FOOTER – PREMIUM
+   ========================= */
+
+.footer {
+  background: #020617; /* deeper navy for premium feel */
+  color: #e5e7eb;
+  padding: 60px 20px 28px;
+}
+
+/* Layout */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* =========================
+   BRAND
+   ========================= */
+
+.footer-logo {
+  font-weight: 800;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+}
+
+.footer-centre {
+  margin-left: 6px;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.footer-desc {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #9ca3af;
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: #d1d5db;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* =========================
+   SOCIAL
+   ========================= */
+
+.footer-social {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.footer-social a {
+  font-size: 18px;
+  color: #9ca3af;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   BOTTOM BAR
+   ========================= */
+
+.footer-bottom {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid #1f2933;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
