@@ -1,0 +1,982 @@
+.section {
+  padding: 90px 20px;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 48px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-grid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  margin-top: 16px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* =========================
+   COURSE PAGES (DETAIL)
+   ========================= */
+
+/* Course section spacing */
+.course-section {
+  margin-bottom: 80px;
+}
+
+/* Top banner image (used in Bangalore/Madras/GujaratCourse) */
+.course-banner {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+/* Card grid already exists globally */
+.course-section .card-grid {
+  margin-top: 32px;
+}
+
+/* =========================
+   COURSE CTA / FEE BOX
+   ========================= */
+
+.course-box {
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.course-fee {
+  font-size: 28px;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 20px;
+}
+
+.course-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   HOME COURSES (PREVIEW)
+   ========================= */
+
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+  .course-banner {
+    height: 220px;
+  }
+
+  .course-fee {
+    font-size: 22px;
+  }
+
+  .course-box {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.final-cta {
+  background: linear-gradient(135deg, #7f1d1d, #b91c1c);
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.final-cta-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.final-cta h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.final-cta p {
+  margin-top: 14px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.final-cta-actions {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #374151;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b91c1c;
+}
+
+@media (min-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.journey {
+  background: #f3f4f6;
+}
+
+.journey-steps {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .journey-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.journey-step {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.journey-step span {
+  display: inline-block;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.journey-step h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.journey-step p {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.learn-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .learn-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.learn-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.learn-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.learn-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.learn-card li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.learn-card:hover {
+  transform: translateY(-8px);
+}
+
+.fee-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.fee-amount {
+  font-size: 36px;
+  font-weight: 800;
+  color: #b91c1c;
+  margin-bottom: 12px;
+}
+
+.fee-note {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.emi-grid {
+  display: grid;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .emi-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.emi-card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+.logos-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-grid {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .logo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.logo-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  text-align: center;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* =========================
+   TESTIMONIALS – BASE
+   ========================= */
+
+.testimonial-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.testimonial-name {
+  font-weight: 700;
+}
+
+.testimonial-centre {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+/* =========================
+   CENTRE PAGES
+   ========================= */
+
+/* Top image */
+.centre-banner {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 32px;
+}
+
+/* Two-column content */
+.centre-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+/* Content cards */
+.centre-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.centre-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.centre-card p {
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Hover (subtle, professional) */
+.centre-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.25s ease;
+}
+
+/* =========================
+   RESPONSIVE – CENTRES
+   ========================= */
+
+@media (max-width: 1024px) {
+  .centre-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .centre-banner {
+    height: 220px;
+  }
+
+  .centre-card {
+    padding: 24px;
+  }
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin-bottom: 16px;
+}
+
+.card li {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+/* =========================
+   PLACEMENTS – GENERAL
+   ========================= */
+
+.placement-flow {
+  margin-top: 60px;
+}
+
+/* =========================
+   PLACEMENT CARDS
+   ========================= */
+
+.placement-card,
+.section .card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.placement-card:hover,
+.section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.placement-card h4,
+.section .card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.placement-card p,
+.section .card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* =========================
+   TESTIMONIALS – DETAILED
+   ========================= */
+
+.testimonial-wrap {
+  margin-top: 80px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: left;
+  position: relative;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: #111827;
+}
+
+.testimonial-centre {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Avatar circle */
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Decorative quote */
+.testimonial-card::before {
+  content: "“";
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 48px;
+  color: #fca5a5;
+}
+
+.testimonial-outcome {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b91c1c;
+}
+
+/* =========================
+   RESPONSIVE – TESTIMONIALS
+   ========================= */
+
+@media (max-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .placement-card,
+  .section .card {
+    padding: 26px 22px;
+  }
+
+  .testimonial-card {
+    padding: 26px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+}
+
+.why-card {
+  min-height: auto;
+  padding: 22px;
+}
+
+.why-card h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* =================================================
+   PHILOSOPHY – HOME PREVIEW SECTION
+   ================================================= */
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.philosophy-item {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.philosophy-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.philosophy-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.philosophy-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Home responsive */
+@media (max-width: 1024px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .philosophy-item {
+    padding: 28px 24px;
+  }
+}
+
+/* =================================================
+   PHILOSOPHY PAGE (DEDICATED PAGE)
+   ================================================= */
+
+.philosophy-page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hero image */
+.philosophy-hero {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 48px;
+}
+
+/* Intro text */
+.philosophy-text {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.philosophy-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+/* =================================================
+   LEADERSHIP QUOTES
+   ================================================= */
+
+.philosophy-quotes {
+  margin-top: 80px;
+}
+
+.philosophy-quote {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.philosophy-quote.reverse {
+  grid-template-columns: 1fr 240px;
+}
+
+.philosophy-quote.reverse img {
+  order: 2;
+}
+
+/* Image */
+.philosophy-quote img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  filter: grayscale(100%);
+  border: 4px solid #000;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Quote content */
+.quote-text {
+  font-size: 22px;
+  line-height: 1.6;
+  font-style: italic;
+  color: #1f2933;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Decorative quotation mark (desktop only) */
+.quote-text::before {
+  content: "“";
+  font-size: 64px;
+  color: #b91c1c;
+  position: absolute;
+  top: -32px;
+  left: -28px;
+}
+
+/* Author */
+.quote-author {
+  font-size: 18px;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 6px;
+}
+
+/* Role */
+.quote-role {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* =================================================
+   RESPONSIVE – PHILOSOPHY PAGE
+   ================================================= */
+
+@media (max-width: 1024px) {
+  .philosophy-quote {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .philosophy-quote.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-quote img {
+    margin: auto;
+  }
+
+  /* Move quote mark ABOVE text on mobile */
+  .quote-text::before {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    margin-bottom: 12px;
+    font-size: 48px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .philosophy-hero {
+    height: 220px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .quote-author {
+    font-size: 16px;
+  }
+}
+
+/* =================================================
+   HOME PHILOSOPHY PREVIEW – POLISHED
+   ================================================= */
+
+.philosophy-preview {
+  text-align: center;
+}
+
+.philosophy-preview .philosophy-grid {
+  margin-top: 48px;
+}
+
+.philosophy-preview .philosophy-item {
+  text-align: left;
+}
+
+/* CTA */
+.philosophy-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Subtle visual separation */
+.philosophy-preview {
+  padding-top: 20px;
+}
+
+/* Mobile polish */
+@media (max-width: 768px) {
+  .philosophy-preview .philosophy-item {
+    text-align: center;
+  }
+}
+
+/* =========================
+   PLACEMENT LOGO SLIDER
+   ========================= */
+
+.placement-logos {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.logo-slider-wrapper {
+  position: relative;
+  margin-top: 40px;
+}
+
+.logo-slider {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 40px;
+}
+
+.logo-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.logo-item {
+  min-width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item img {
+  max-height: 60px;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Arrows */
+.logo-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.logo-nav.left {
+  left: 0;
+}
+
+.logo-nav.right {
+  right: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo-nav {
+    display: none;
+  }
+
+  .logo-slider {
+    padding: 20px;
+    gap: 28px;
+  }
+}

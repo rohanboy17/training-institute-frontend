@@ -1,0 +1,72 @@
+/* =========================
+   BUTTON SYSTEM – PREMIUM
+   ========================= */
+
+.btn-primary {
+  background: #ffffff;
+  color: #7f1d1d;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+}
+
+.btn-primary:hover {
+  background: #991b1b;
+  color: #ffffff;
+}
+
+/* Outline (Hero / Dark bg) */
+.btn-outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* Light outline (generic sections) */
+.btn-outline-light {
+  border: 2px solid #26077b;
+  color: #c9d5b1;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: blue;
+}
+
+.btn-outline-light:hover {
+  background: #afc601;
+  color: #ffffff;
+}
+
+/* EMI / secondary CTA */
+.btnemi-outline {
+  border: 2px solid #7f1d1d;
+  color: #7f1d1d;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: transparent;
+}
+
+.btnemi-outline:hover {
+  background: #7f1d1d;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-outline,
+  .btn-outline-light,
+  .btnemi-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
